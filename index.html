@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedTable</title>
+    <link href="./dist/output.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white flex flex-wrap items-center justify-between gap-y-3 px-4 py-4 md:px-12">
+        <h1 class="text-red-500 font-bold text-2xl md:text-3xl font-serif">Red Table</h1>
+
+        <div class="order-last w-full flex justify-center gap-8 font-medium md:order-none md:w-auto md:gap-10">
+            <a href="" class="text-lg md:text-[20px]">Menu</a>
+            <a href="" class="text-lg md:text-[20px]">About</a>
+            <a href="" class="text-lg md:text-[20px]">Visit</a>
+        </div>
+
+        <a href="" class="bg-red-500 text-white rounded-full px-4 py-2 text-base md:px-5 md:text-xl hover:bg-red-600">Book a table</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-screen bg-red-500">
+        <!-- Image layer: change opacity-40 to adjust -->
+       <img src="./images/redtablebg5.jpg" alt="" class="absolute inset-0 w-full h-full object-cover ">
+        <!-- Content layer -->
+        <div class="relative z-10 px-4 py-12 md:px-12 md:py-16">
+            <h1 class="text-white font-bold font-serif text-6xl sm:text-8xl lg:text-8xl">
+                Cooked fresh, <br> Served warm, <br> Shared with <br> everyone.
+            </h1>
+
+            <p class="text-red-50 text-base md:text-[20px] mt-6 max-w-md">
+                Family recipes, local ingredients, and a table with room for you. Open daily from 11am.
+            </p>
+
+            <div class="flex flex-wrap gap-4 mt-7">
+                <a href="" class="bg-white text-red-500 border-2 border-white rounded-full hover:bg-red-500 hover:text-white px-6 py-2 text-lg md:px-8 md:py-3 md:text-xl font-medium">Book a table</a>
+                <a href="" class="bg-red-500 text-white border-2 border-white rounded-full hover:bg-white hover:text-red-500 px-6 py-2 text-lg md:px-8 md:py-3 md:text-xl font-medium">See the menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorites -->
+    <section class="bg-white px-4 py-10 md:px-12 md:py-14">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-red-600 text-3xl md:text-5xl font-bold font-serif">Favorites from our kitchen</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-7">
+                <img src="./images/redtablsmokyjollofrice.png" alt="Smoky jollof rice" class="w-full aspect-4/3 object-cover rounded-3xl">
+                <img src="./images/redtablesuya.jfif" alt="Suya chicken skewers" class="w-full aspect-4/3 object-cover rounded-3xl">
+                <img src="./images/redtablepeppersoup.jpg" alt="Pepper soup" class="w-full aspect-4/3 object-cover rounded-3xl">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
