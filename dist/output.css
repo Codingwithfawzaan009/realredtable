@@ -19,6 +19,8 @@
     --container-md: 28rem;
     --container-lg: 32rem;
     --container-7xl: 80rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
@@ -253,8 +255,8 @@
   .aspect-4\/3 {
     aspect-ratio: 4/3;
   }
-  .h-56 {
-    height: calc(var(--spacing) * 56);
+  .h-36 {
+    height: calc(var(--spacing) * 36);
   }
   .h-full {
     height: 100%;
@@ -283,20 +285,26 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
   }
-  .items-start {
-    align-items: flex-start;
-  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -407,6 +415,10 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
   .leading-tight {
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
@@ -467,11 +479,26 @@
     }
   }
   @media (width >= 40rem) {
-    .sm\:h-60 {
-      height: calc(var(--spacing) * 60);
+    .sm\:h-56 {
+      height: calc(var(--spacing) * 56);
     }
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\:flex-row {
+      flex-direction: row;
+    }
+    .sm\:items-start {
+      align-items: flex-start;
+    }
+    .sm\:justify-between {
+      justify-content: space-between;
+    }
+    .sm\:gap-3 {
+      gap: calc(var(--spacing) * 3);
+    }
+    .sm\:gap-6 {
+      gap: calc(var(--spacing) * 6);
     }
     .sm\:text-5xl {
       font-size: var(--text-5xl);
@@ -488,6 +515,9 @@
     }
     .md\:order-none {
       order: 0;
+    }
+    .md\:h-60 {
+      height: calc(var(--spacing) * 60);
     }
     .md\:min-h-\[60vh\] {
       min-height: 60vh;
@@ -536,6 +566,10 @@
     .md\:text-7xl {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+    .md\:text-base {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
     }
     .md\:text-xl {
       font-size: var(--text-xl);
