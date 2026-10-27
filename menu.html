@@ -7,154 +7,158 @@
     <link href="./dist/output.css" rel="stylesheet"/>
 </head>
 <body class="bg-white">
-     <!-- Navbar -->
-    <nav class="bg-white flex  justify-between  px-4 py-4 ">
 
-        <!--Redtable-->
-        <h1 class="text-red-500 font-bold text-3xl font-serif">Red Table</h1>
-        
-        <!--NAVS-->
-        <div class="order-last w-full flex justify-center gap-8 font-medium md:order-0 md:w-auto md:gap-10">
+    <!-- Navbar: logo + button on the first row, links drop to their own row on phones -->
+    <nav class="bg-white flex flex-wrap items-center justify-between gap-y-3 px-4 py-4 md:px-8">
+
+        <h1 class="text-red-500 font-bold text-2xl md:text-3xl font-serif">Red Table</h1>
+
+        <div class="order-last w-full flex justify-center gap-8 font-medium md:order-none md:w-auto md:gap-10">
             <a href="index.html" class="text-lg md:text-[20px]">Home</a>
-            <a href="" class="text-lg md:text-[20px]">About</a>
-            <a href="" class="text-lg md:text-[20px]">Visit</a>
+            <a href="#" class="text-lg md:text-[20px]">About</a>
+            <a href="#" class="text-lg md:text-[20px]">Visit</a>
         </div>
 
-       <!--Book a table-->
-        <a href="" class="bg-red-500 text-white rounded-full px-4 py-2 text-base md:px-5 md:text-xl hover:bg-red-600">Book a table</a>
+        <a href="#" class="bg-red-500 text-white rounded-full px-4 py-2 text-base md:px-5 md:text-xl hover:bg-red-600">Book a table</a>
     </nav>
 
-
-    <section class="relative min-h-[60vh] overflow-hidden">
-
-    <!-- Background image -->
-    <img src="images/redtablebg12.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
-
-    <!-- Your content -->
-    <div class="relative z-10 px-4 py-16 md:px-20 text-white">
-        <h2 class="font-serif font-bold text-5xl md:text-7xl">Our Menu</h2>
-        <p class="mt-4 text-xl max-w-lg font-medium">Family recipes, local ingredients, and a table with room for you.</p>
-    </div>
-    </section>
-
-
-    <section class="ml-10 mt-7 mb-15">
-
-        <!--Our menu-->
-        <h1 class="text-5xl font-bold text-red-600">Our Menu</h1>
-
-        <!--THE MENUS-->
-        <div class="grid grid-cols-4 gap-8 mt-8 mr-10">
-
-            <!--Smoky jollof rice-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/redtablsmokyjollofrice.png" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Smoky jollof rice</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦5,000</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Party jollof rice with a smoky finish.</P>
-            </a>
-            <!--Fried rice-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/redtablebg7.png" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Fried rice</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦5,000</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Rice with peas,carrots and peppers.</P>
-            </a>
-            <!--Green rice-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/greenrice.jpg" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Green rice</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦4,500</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Herb rice, fresh and light.</P>
-            </a>
-            <!--Suya chicken skewers-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/suyachicken7.webp" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Suya chicken <br> skewers</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦3,500</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Grilled chicken with spicy suya rub.</P>
-            </a>
-            <!--Pepper soup-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/peppersoup.jfif" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Pepper soup</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦5,500</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Hot, peppery broth with aromatic spices.</P>
-            </a>
-            <!--Pounded yam and egusi-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/poundedyam1.jpg" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Pounded yam and  egusi</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦7,500</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Smooth pounded yam with rich melon- <br> seed soup.</P>
-            </a>
-            <!--Ofada rice and stew-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/ofadarice.jpg" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Ofada rice and stew</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦6,500</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Local rice with spicy ofada pepper sauce.</P>
-            </a>
-            <!--Moi Moi-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/moimoi.jpg" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Moi Moi</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦1,500</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Steamed bean pudding with peppers.</P>
-            </a>
-            <!--Akara-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/akara.jpg" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Akara</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦1,500</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Crispy fried bean cakes.</P>
-            </a>
-            <!--Fried plantain-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/plantain1.jpg" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Fried plantain</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦2,000</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Sweet golden plantain, fried until <br> caramelised.</P>
-            </a>
-            <!--Asun-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/asun1.jfif" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Asun</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦5,000</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Peppered goat meat, smoky and spicy.</P>
-            </a>
-            <!--ZOBO-->
-            <a href="" class="transition-transform duration-300 hover:scale-[1.02]">
-                <img src="images/zobo.jpg" class="w-100 h-60 rounded-xl">
-                <div class="flex gap-15 px-1 leading-tight mt-2">
-                    <h1 class="text-[20px] font-bold">Zobo</h1>
-                    <p class="text-red-500 font-bold text-[19px]">₦1,500</p>
-                </div>
-                <P class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent ml-1">Chilled hibiscus drink wiith ginger.</P>
-            </a>
+    <!-- Hero -->
+    <section class="relative min-h-[40vh] md:min-h-[60vh] overflow-hidden">
+        <img src="images/redtablebg12.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 px-4 py-12 md:px-20 md:py-16 text-white">
+            <h2 class="font-serif font-bold text-4xl sm:text-5xl md:text-7xl">Our Menu</h2>
+            <p class="mt-4 text-lg md:text-xl max-w-lg font-medium">Family recipes, local ingredients, and a table with room for you.</p>
         </div>
     </section>
+
+    <!-- Menu: 1 column on phones, 2 on tablets, 4 on laptops -->
+    <section class="max-w-7xl mx-auto px-4 md:px-10 mt-7 mb-12">
+        <h2 class="text-3xl md:text-5xl font-bold text-red-600">Our Menu</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-8">
+
+            <!--Smoky jollof rice-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/redtablsmokyjollofrice.png" alt="Smoky jollof rice" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Smoky jollof rice</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦5,000</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Party jollof rice with a smoky finish.</p>
+            </a>
+
+            <!--Fried rice-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/redtablebg7.png" alt="Fried rice" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Fried rice</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦5,000</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Rice with peas, carrots and peppers.</p>
+            </a>
+
+            <!--Green rice-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/greenrice.jpg" alt="Green rice" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Green rice</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦4,500</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Herb rice, fresh and light.</p>
+            </a>
+
+            <!--Suya chicken skewers-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/suyachicken7.webp" alt="Suya chicken skewers" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Suya chicken skewers</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦3,500</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Grilled chicken with spicy suya rub.</p>
+            </a>
+
+            <!--Pepper soup-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/peppersoup.jfif" alt="Pepper soup" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Pepper soup</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦5,500</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Hot, peppery broth with aromatic spices.</p>
+            </a>
+
+            <!--Pounded yam and egusi-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/poundedyam1.jpg" alt="Pounded yam and egusi" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Pounded yam and egusi</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦7,500</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Smooth pounded yam with rich melon-seed soup.</p>
+            </a>
+
+            <!--Ofada rice and stew-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/ofadarice.jpg" alt="Ofada rice and stew" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Ofada rice and stew</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦6,500</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Local rice with spicy ofada pepper sauce.</p>
+            </a>
+
+            <!--Moi Moi-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/moimoi.jpg" alt="Moi Moi" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Moi Moi</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦1,500</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Steamed bean pudding with peppers.</p>
+            </a>
+
+            <!--Akara-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/akara.jpg" alt="Akara" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Akara</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦1,500</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Crispy fried bean cakes.</p>
+            </a>
+
+            <!--Fried plantain-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/plantain1.jpg" alt="Fried plantain" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Fried plantain</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦2,000</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Sweet golden plantain, fried until caramelised.</p>
+            </a>
+
+            <!--Asun-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/asun1.jfif" alt="Asun" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Asun</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦5,000</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Peppered goat meat, smoky and spicy.</p>
+            </a>
+
+            <!--Zobo-->
+            <a href="#" class="block transition-transform duration-300 hover:scale-[1.02]">
+                <img src="images/zobo.jpg" alt="Zobo" class="w-full h-56 sm:h-60 object-cover rounded-xl">
+                <div class="flex justify-between items-start gap-3 px-1 leading-tight mt-2">
+                    <h3 class="text-lg md:text-[20px] font-bold">Zobo</h3>
+                    <p class="text-red-500 font-bold text-lg md:text-[19px] shrink-0">₦1,500</p>
+                </div>
+                <p class="bg-linear-to-r from-black to-red-700 bg-clip-text text-transparent mt-1 px-1">Chilled hibiscus drink with ginger.</p>
+            </a>
+
+        </div>
+    </section>
+
 </body>
 </html>
