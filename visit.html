@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Red Table</title>
+    <link href="./dist/output.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar (same as homepage) -->
+    <nav class="bg-white flex flex-wrap items-center justify-between gap-y-3 px-4 py-4 md:px-12">
+        <h1 class="text-red-500 font-bold text-2xl md:text-3xl font-serif">Red Table</h1>
+
+        <div class="order-last w-full flex justify-center gap-8 font-medium md:order-0 md:w-auto md:gap-10">
+            <a href="index.html" class="text-lg md:text-[20px]">Home</a>
+            <a href="menu.html" class="text-lg md:text-[20px]">Menu</a>
+            <a href="about.html" class="text-lg md:text-[20px]">About</a>
+            <a href="visit.html" class="text-lg md:text-[20px]">Visit</a>
+        </div>
+
+        <a href="#reserve" class="bg-red-500 text-white rounded-full px-4 py-2 text-base md:px-5 md:text-xl hover:bg-red-600">Book a table</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-red-500 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end md:justify-between">
+            <div class="px-4 py-12 md:px-12 md:py-20">
+                <h1 class="text-white font-bold font-serif text-6xl sm:text-8xl">
+                    Visit <br> us.
+                </h1>
+                <p class="text-red-50 text-base md:text-[20px] mt-6 max-w-md">
+                    Come with family, friends or on your own. There is always a seat.
+                </p>
+                <a href="#reserve" class="inline-block mt-7 bg-white text-red-500 border-2 border-white rounded-full hover:bg-red-500 hover:text-white px-6 py-2 text-lg md:px-8 md:py-3 md:text-xl font-medium">Book a table</a>
+            </div>
+
+               
+            <!-- Video (replaces the dinner table image) -->
+    <div class="px-4 pb-12 md:px-12 md:py-20 md:self-center">
+
+        <video autoplay muted loop playsinline
+           poster="./images/redtablebg5.jpg"
+           class="w-full md:w-md aspect-4/3 object-cover rounded-3xl">
+        <source src="./videos/Decadent Depictions(MP4).mp4" type="video/mp4">
+        </video>
+    </div>
+        </div>
+    </section>
+
+    <!-- Address and hours -->
+    <section class="bg-white px-4 py-10 md:px-12 md:py-14">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-red-500 font-bold">Where to find us</p>
+            <h2 class="text-red-600 text-3xl md:text-5xl font-bold font-serif mt-2">12 Example Street, <br> Your Area, Lagos</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8 mt-7">
+                <div class="bg-red-500 text-white rounded-3xl p-6">
+                    <p class="font-bold">Lunch</p>
+                    <p class="font-serif font-bold text-3xl mt-1">11am to 3pm</p>
+                </div>
+                <div class="bg-white border-2 border-red-500 rounded-3xl p-6">
+                    <p class="font-bold text-red-500">Dinner</p>
+                    <p class="font-serif font-bold text-3xl text-red-600 mt-1">5pm to 10pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-white px-4 pb-10 md:px-12 md:pb-14">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-8">
+            <div class="bg-red-50 border border-red-200 rounded-3xl p-6">
+                <h3 class="text-red-500 font-serif font-bold text-2xl">Dine in</h3>
+                <p class="mt-2 text-neutral-700">Cosy tables for families and friends.</p>
+            </div>
+            <div class="bg-red-50 border border-red-200 rounded-3xl p-6">
+                <h3 class="text-red-500 font-serif font-bold text-2xl">Takeaway</h3>
+                <p class="mt-2 text-neutral-700">Order ahead and pick up while it is hot.</p>
+            </div>
+            <div class="bg-red-50 border border-red-200 rounded-3xl p-6">
+                <h3 class="text-red-500 font-serif font-bold text-2xl">Events</h3>
+                <p class="mt-2 text-neutral-700">Birthdays and small parties are welcome.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserve a table -->
+    <section id="reserve" class="bg-white px-4 pb-14 md:px-12 md:pb-20">
+        <div class="max-w-7xl mx-auto bg-red-500 text-white rounded-3xl p-6 md:p-10">
+            <h2 class="font-serif font-bold text-3xl md:text-5xl">Reserve your table</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <label class="bg-white rounded-2xl px-5 py-3 block">
+        <span class="block text-xs text-red-500 font-bold">Date</span>
+        <input type="text" value="Sat, 8 Nov" class="w-full bg-transparent outline-none font-bold text-red-600">
+    </label>
+    <label class="bg-white rounded-2xl px-5 py-3 block">
+        <span class="block text-xs text-red-500 font-bold">Time</span>
+        <input type="text" value="7:00 pm" class="w-full bg-transparent outline-none font-bold text-red-600">
+    </label>
+    <label class="bg-white rounded-2xl px-5 py-3 block">
+        <span class="block text-xs text-red-500 font-bold">Guests</span>
+        <select class="w-full bg-transparent outline-none font-bold text-red-600">
+            <option>1 person</option>
+            <option>2 people</option>
+            <option>3 people</option>
+            <option selected>4 people</option>
+            <option>5 people</option>
+            <option>6+ people</option>
+        </select>
+    </label>
+</div>
+<button type="button" class="mt-4 w-full bg-white text-red-500 border-2 border-white rounded-full hover:bg-red-500 hover:text-white px-8 py-3 text-lg md:text-xl font-medium">
+                    Check availability
+                </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-600 text-red-50 px-4 py-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between gap-3 text-sm md:text-base">
+            <p>© 2026 Red Table</p>
+            <div class="flex gap-5">
+                <a href="#" class="hover:text-white">Instagram</a>
+                <a href="#" class="hover:text-white">Facebook</a>
+                <a href="#" class="hover:text-white">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
