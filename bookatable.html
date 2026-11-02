@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redtable Book a table</title>
+    <link href="./dist/output.css" rel="stylesheet"/>
+</head>
+<body class="bg-red-500">
+    <nav class="bg-white flex flex-wrap items-center justify-between gap-y-3 px-4 py-4 md:px-12">
+        <h1 class="text-red-500 font-bold text-2xl md:text-3xl font-serif">Red Table</h1>
+
+        <div class="order-last w-full flex justify-center gap-8 font-medium md:order-0 md:w-auto md:gap-10">
+            <a href="index.html" class="text-lg md:text-[20px]">Home</a>
+            <a href="menu.html" class="text-lg md:text-[20px]">Menu</a>
+            <a href="about.html" class="text-lg md:text-[20px]">About</a>
+            <a href="visit.html" class="text-lg md:text-[20px]">Visit</a>
+        </div>
+
+        <a href="bookatable.html" class="bg-red-500 text-white rounded-full px-4 py-2 text-base md:px-5 md:text-xl hover:bg-red-600">Book a table</a>
+    </nav>
+    <section class="flex flex-col shadow-2xl bg-white mt-14 w-full max-w-md mx-auto rounded-xl px-5 pb-6">
+    <h1 class="text-red-500 font-bold text-4xl font-serif mt-5 text-center">Book a table</h1>
+    <p class="font-medium text-neutral-700 text-center">Fill in your details and we will keep your seat</p>
+
+    <form action="https://wa.me/2347031270623" method="get" target="_blank" class="mt-6">
+    <input type="hidden" name="text" value="Hello Red Table, please confirm my booking.">
+
+    <label class="block bg-red-300 py-1 px-3 font-bold text-red-500 rounded-xl border border-red-700">Full Name
+        <input type="text" required placeholder="Your full name" class="block w-full outline-none bg-transparent text-neutral-700 text-[15px]">
+    </label>
+    <label class="block bg-red-300 py-1 px-3 font-bold text-red-500 rounded-xl border border-red-700 mt-3">Phone Number
+        <input type="tel" required placeholder="080 0000 0000" class="block w-full outline-none bg-transparent text-neutral-700 text-[15px]">
+    </label>
+    <div class="flex justify-between">
+        <label class="block w-50 bg-red-300 py-1 px-3 font-bold text-red-500 rounded-xl border border-red-700 mt-3">Date
+            <input type="date" required class="block w-full outline-none bg-transparent text-red-900 text-[15px]">
+        </label>
+        <label class="block w-50 bg-red-300 py-1 px-3 font-bold text-red-500 rounded-xl border border-red-700 mt-3">Time
+            <input type="time" required class="block w-full outline-none bg-transparent text-red-900 text-[15px]">
+        </label>
+    </div>
+    <label class="block bg-red-300 py-1 px-3 font-bold text-red-500 rounded-xl border border-red-700 mt-3">Guests
+        <select required class="block w-full outline-none bg-transparent text-red-900 text-[15px]">
+            <option value="1">1 person</option>
+            <option value="2">2 people</option>
+            <option value="3">3 people</option>
+            <option value="4">4 people</option>
+            <option value="5">5 people</option>
+            <option value="6">6 people</option>
+            <option value="7+">7 or more</option>
+        </select>
+    </label>
+
+    <button type="submit" class="block text-center w-full mt-5 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full py-3 text-lg">Confirm on WhatsApp</button>
+</form>
+</section>
+</body>
+</html>
